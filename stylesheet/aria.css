@@ -1,0 +1,146 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+[role="search"] {
+    float: right;
+}
+
+#wrapper {
+	min-height:100%;
+    width: 50%;
+    margin: 0 auto;
+	position:relative;
+}
+#content {
+     float: left;
+     margin: 0 1.5%;
+     width: 70%; 
+}
+
+div.section > img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 10px solid rgba(255,255,255,0.5);
+}
+
+div.product {
+	clear: both;
+	position: relative;
+	min-height: 220px;
+	margin-bottom: 10px;
+	z-index: 0;
+}
+
+div.product > img {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+	height: 200px;
+	border: 10px solid rgba(255,255,255,0.5);
+}
+div.product > h3 {
+	color: #77171A;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-weight: bolder;
+}
+div.product > p.review {
+	margin-top: 10px;
+	font-style: italic;
+}
+
+
+
+#footer {
+	clear: both;
+	background: #1928cf;
+	background-color:  #1928cf;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top: 2px solid black;
+	color: white;
+	min-height: 50px;
+	position: relative;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+/* navigation */
+
+[aria-label^="nav"] ul {
+	background: #1928cf;
+}
+
+[aria-label^="nav"] ul:after {
+	content: '\0020';
+	display: block;
+	clear: both;
+}
+
+[aria-label^="nav"] li {
+	float: left;
+	vertical-align: top;
+	list-style: none;
+}
+
+[aria-label^="nav"] li + li a {
+	border-left: 1px solid;
+}
+
+[aria-label^="nav"] a {
+	color: #fff;
+	display: block;
+	padding: 0.5em;
+}
+
+[aria-label^="nav"] a:hover, [aria-label^="nav"] a:focus {
+	background: #222;
+}
+
+/* Login Form */
+fieldset > div {
+	position: relative;
+}
+
+/* set up hidden tooltip */
+[role="tooltip"] {
+	display: none;
+	padding: 0.25em;
+	margin: 0;
+	color: #fff;
+	background: #EF8100;
+	width: 100%;
+	z-index: 2;
+}
+
+
+/* reveal associated tooltip on focus of preceeding input */
+input:focus + [role="tooltip"] {
+	display: block;
+	position: absolute;
+	top: 100%;
+}
+fieldset {
+	padding: 1.5em;
+	border: 2px solid #222;
+	background: #E0E1EF;
+}
+
+[role="complementary"] {
+  width: 20%;
+  float: right;
+  font-size: 1.2em;
+}
