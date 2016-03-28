@@ -110,6 +110,30 @@ div.product > p.review {
 	background: #222;
 }
 
+[aria-haspopup="true"] {
+	position: relative;
+}
+
+[aria-haspopup="true"] span {
+	font-size: 0.85em;
+	padding-left: 0.25em;
+}
+
+ul[aria-hidden="true"] {
+	display: none;
+}
+
+[aria-haspopup="true"] + ul[aria-hidden="false"] {
+	margin-top: 0;
+	display: block;
+	position: absolute;
+	min-width: 200px;
+}
+
+[aria-haspopup="true"] + ul li {
+	float: none;
+}
+
 /* Login Form */
 fieldset > div {
 	position: relative;
@@ -143,4 +167,47 @@ fieldset {
   width: 20%;
   float: right;
   font-size: 1.2em;
+}
+
+/* tab interface */
+
+a[role="tab"] {
+	background: #1928CF;
+	color: #fff;
+	padding: 0.75em 0.33em;
+	display: inline-block;
+	margin-right: 0.25em;
+}
+
+a[aria-selected], a[role="tab"]:focus {
+	background: #fff;
+	color: #222;
+	border: 2px solid #222;
+	border-bottom: 0;
+	position: relative;
+	top: 2px;
+}
+
+a[role="tab"]:focus {
+	background: #eee;
+}
+
+[role="tablist"] li {
+	display: inline-block;
+	list-style: none;
+}
+
+[role="tabpanel"] {
+	margin-top: 0;
+	padding: 1.5em;
+	border: 2px solid #222;
+}
+
+[role="tabpanel"][aria-hidden="true"] {
+	display: none;
+}
+
+[role="tabpanel"]:focus {
+	background: #eee;
+	outline: thin dotted;
 }

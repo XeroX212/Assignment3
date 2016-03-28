@@ -18,14 +18,21 @@
       <input type='search' placeholder='Example search form'>
       <input type='submit' value='search'>
     </form>
-  <nav role="navigation" aria-label="nav">
-	<ul class="with-dropdowns">
-		<li><a href="#">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Blog</a></li>
-		<li><a href="#">Contact</a></li>
-	</ul>
-</nav>
+        <nav role="navigation" aria-label="nav">
+            <ul class="with-dropdowns">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">About</a>
+                    <ul aria-hidden="true" aria-label="submenu">
+                        <li><a href="#">Bacon</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 		
 </header>
 <div id="wrapper">
@@ -44,24 +51,33 @@
             <div>
                 <h1>Bacon Product</h1>
             </div>
-            				<!-- Bacon Placemat -->
-				<div class="product">
-					<img src="img/products/placemat.jpg" alt="Bacon Placemat" title="Bacon Placemat" />
-					<h3>BACON PLACEMAT</h3>
-					<p>These 17" x 11-1/4" (43.2 cm x 28.6 cm) placemats look like they're made of hot and sizzling strips of fried bacon. Each soft vinyl mat has an easy-clean finish so you can quickly wipe up any spills or splatters.</p>
-				</div>
-				<!-- Bacon Air Freshener -->
-				<div class="product">
-					<img src="img/products/airfreshener.jpg" alt="Bacon Air Freshener" title="Bacon Air Freshener" />
-					<h3>BACON AIR FRESHENER</h3>
-					<p>Each one measures about 4" (10.2 cm) and comes with a string for hanging.</p>
-				</div>
-				<!-- Bacon Bandaids -->
-				<div class="product">
-					<img src="img/products/bandaids.jpg" alt="Bacon Bandages" title="Bacon Bandages" />
-					<h3>BACON BANDAGES</h3>
-					<p>Ouch! That smarts! Treat your minor cuts, scrapes and scratches with the incredible healing power of a designer bandage from Accoutrements. And if a fancy bandage isn't enough to dry up your tears, how about a FREE TOY! Each comes in a 3-3/4" (9.5 cm) tall metal pocket tin and contains a small plastic trinket to help make even the ouchiest owies feel all better in no time. The 3" x 1" (7.6 cm x 2.5 cm) Bacon Strips are cut to look like small slabs of bacon. Fifteen per tin.</p>
-				</div>
+<div class="tab-interface">
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                    <li><a href="#section3">Section 3</a></li>
+                </ul>
+                <section id="section1">
+                    <div class="product">
+                        <img src="img/products/placemat.jpg" alt="Bacon Placemat" title="Bacon Placemat" />
+                        <h3>BACON PLACEMAT</h3>
+                        <p>These 17" x 11-1/4" (43.2 cm x 28.6 cm) placemats look like they're made of hot and sizzling strips of fried bacon. Each soft vinyl mat has an easy-clean finish so you can quickly wipe up any spills or splatters.</p>
+                    </div>
+                </section>
+                <section id="section2">
+                    <div class="product">
+                        <img src="img/products/airfreshener.jpg" alt="Bacon Air Freshener" title="Bacon Air Freshener" />
+                        <h3>BACON AIR FRESHENER</h3>
+                        <p>Each one measures about 4" (10.2 cm) and comes with a string for hanging.</p>
+                    </div>
+                </section>
+                <section id="section3">
+                    <div class="product">
+                        <img src="img/products/bandaids.jpg" alt="Bacon Bandages" title="Bacon Bandages" />
+                        <h3>BACON BANDAGES</h3>
+                        <p>Ouch! That smarts! Treat your minor cuts, scrapes and scratches with the incredible healing power of a designer bandage from Accoutrements. And if a fancy bandage isn't enough to dry up your tears, how about a FREE TOY! Each comes in a 3-3/4" (9.5 cm) tall metal pocket tin and contains a small plastic trinket to help make even the ouchiest owies feel all better in no time. The 3" x 1" (7.6 cm x 2.5 cm) Bacon Strips are cut to look like small slabs of bacon. Fifteen per tin.</p>
+                    </div>
+                </section>
     
 </div>
 </main>
@@ -89,5 +105,7 @@
   <h2>Bacon Lovers</h2>
   <p>Bacon everywhere</p>
 </footer>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
